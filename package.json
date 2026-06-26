@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "ADMIN_PASSWORD=admin123 PORT=3000 node server.js"
+    "dev": "ADMIN_PASSWORD=admin123 PORT=3000 node server.js",
+    "build": "node --check server.js && node --check public/admin.js && node --check public/premium.js && node --check public/app.js"
   },
   "engines": { "node": ">=18" },
   "dependencies": {}
