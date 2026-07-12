@@ -9,7 +9,7 @@ export function IntroScene() {
     >
       <div className="intro-light absolute left-1/2 top-[38%] h-[min(42vw,280px)] w-[min(42vw,280px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(196,165,116,0.12)_0%,rgba(232,226,217,0.04)_35%,transparent_70%)] blur-2xl will-change-transform" />
 
-      <div className="intro-logo relative z-10 opacity-0 will-change-transform">
+      <div className="intro-logo relative z-10 will-change-transform">
         <AlmaderyLogo
           variant="full"
           emblemClassName="w-[4.5rem] h-[4.5rem] md:w-24 md:h-24 mx-auto mb-6 text-champagne"
@@ -18,7 +18,7 @@ export function IntroScene() {
         />
       </div>
 
-      <p className="intro-scroll absolute bottom-10 left-1/2 z-10 -translate-x-1/2 font-body text-[0.625rem] font-light uppercase tracking-[0.35em] text-muted-beige opacity-0">
+      <p className="intro-scroll absolute bottom-10 left-1/2 z-10 -translate-x-1/2 font-body text-[0.625rem] font-light uppercase tracking-[0.35em] text-muted-beige">
         Scroll to Discover
         <span className="intro-scroll-line mx-auto mt-4 block h-10 w-px origin-top bg-gradient-to-b from-champagne/60 to-transparent" />
       </p>

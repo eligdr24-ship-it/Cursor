@@ -173,7 +173,34 @@
   color: color-mix(in srgb, var(--color-muted-beige) 85%, white);
 }
 
-/* Skip link */
+.scene {
+  pointer-events: none;
+}
+
+.scene-intro .intro-scroll {
+  pointer-events: auto;
+}
+
+/* Soft pulse on scroll cue */
+@keyframes scroll-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.intro-scroll {
+  animation: scroll-pulse 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-scroll {
+    animation: none;
+  }
+}
 .skip-link {
   position: absolute;
   left: -9999px;

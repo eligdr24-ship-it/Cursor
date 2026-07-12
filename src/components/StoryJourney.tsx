@@ -38,12 +38,46 @@ export function StoryJourney() {
         autoAlpha: 0,
       })
       gsap.set('.scene-intro', { autoAlpha: 1 })
+      gsap.set('.intro-logo, .intro-scroll, .intro-light', { autoAlpha: 0 })
+      gsap.set('.intro-scroll-line', { scaleY: 0, transformOrigin: 'top center' })
       gsap.set(
         '.rough-diamond, .polished-diamond, .gold-ring, .final-ring, .brand-content, .rough-stage, .polished-stage, .gold-stage, .setting-stage, .final-stage',
         {
           transformPerspective: mobile ? 800 : 1200,
           force3D: true,
         },
+      )
+
+      // Opening entrance plays on load — not gated behind scroll.
+      const introEntrance = gsap.timeline({ defaults: { ease: 'power2.out' } })
+      introEntrance.fromTo(
+        '.intro-light',
+        { autoAlpha: 0, scale: 0.55 },
+        { autoAlpha: 1, scale: 1, duration: reduced ? 0.6 : 1.8 },
+        0,
+      )
+      introEntrance.fromTo(
+        '.intro-logo',
+        { autoAlpha: 0, y: 24, filter: reduced ? 'none' : 'blur(10px)' },
+        {
+          autoAlpha: 1,
+          y: 0,
+          filter: 'blur(0px)',
+          duration: reduced ? 0.5 : 1.6,
+        },
+        0.25,
+      )
+      introEntrance.fromTo(
+        '.intro-scroll',
+        { autoAlpha: 0, y: 12 },
+        { autoAlpha: 0.75, y: 0, duration: 0.7 },
+        1.1,
+      )
+      introEntrance.fromTo(
+        '.intro-scroll-line',
+        { scaleY: 0 },
+        { scaleY: 1, duration: 0.8, transformOrigin: 'top center' },
+        1.3,
       )
 
       const tl = gsap.timeline({
@@ -59,32 +93,11 @@ export function StoryJourney() {
         },
       })
 
-      // ── Opening: logo appears ──────────────────────────────
-      tl.fromTo(
-        '.intro-logo',
-        { autoAlpha: 0, y: 28, filter: 'blur(8px)' },
-        { autoAlpha: 1, y: 0, filter: 'blur(0px)', duration: 1.2, ease: 'power2.out' },
-        0,
-      )
-      tl.fromTo(
-        '.intro-light',
-        { autoAlpha: 0, scale: 0.6 },
-        { autoAlpha: 1, scale: 1, duration: 1.4 },
-        0.1,
-      )
-      tl.fromTo(
-        '.intro-scroll',
-        { autoAlpha: 0, y: 10 },
-        { autoAlpha: 0.7, y: 0, duration: 0.6 },
-        0.8,
-      )
-      tl.to('.intro-scroll-line', { scaleY: 1.15, duration: 0.8 }, 0.9)
-
-      // Hold intro briefly, then fade
-      tl.to({}, { duration: 0.5 })
+      // Brief hold, then leave the opening screen
+      tl.to({}, { duration: 0.35 })
       tl.to(
         '.intro-logo, .intro-scroll, .intro-light',
-        { autoAlpha: 0, y: -20, filter: 'blur(6px)', duration: 0.8 },
+        { autoAlpha: 0, y: -20, filter: reduced ? 'none' : 'blur(6px)', duration: 0.8 },
       )
       tl.to('.scene-intro', { autoAlpha: 0, duration: 0.4 }, '<0.3')
 
