@@ -1,46 +1,256 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Choose Operator</title><link rel="stylesheet" href="/styles.css"></head>
-<body class="simple-user-page">
-  <main class="simple-user-wrap">
-    <section class="simple-card operator-selector">
-      <div class="simple-head"><div class="quote-icon">✦</div><h1>Choose Operator</h1></div>
-      <p class="hint">Open your operator work dashboard. Work pages are fast and open; analytics pages are password protected.</p>
-      <div class="operator-grid" id="operatorGrid">
-        <div class="small">Loading operators...</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="ALMADERY Fine Diamonds & Gold Jewellery. A cinematic story of rough diamond, polished brilliance, gold craftsmanship, and a finished engagement ring.">
+  <meta name="theme-color" content="#070604">
+  <title>ALMADERY | Fine Diamonds & Gold Jewellery</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="/almadery.css">
+  <noscript><style>.scene{position:relative;min-height:100vh;opacity:1;transform:none;filter:none}.story-space{min-height:auto}.pin-shell{position:relative;height:auto;overflow:visible}.brand-lockup{clip-path:none}.intro-lockup{opacity:1;transform:none}</style></noscript>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="/almadery.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#private-access">Skip to private access</a>
+
+  <main id="top" class="site-shell">
+    <section class="story-space" aria-label="The making of an ALMADERY engagement ring">
+      <div class="pin-shell">
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+        <div class="film-grain" aria-hidden="true"></div>
+        <div class="progress-line" aria-hidden="true"><span></span></div>
+
+        <section class="scene scene-intro is-visible" data-scene="intro" aria-labelledby="intro-title">
+          <div class="intro-light" aria-hidden="true"></div>
+          <div class="logo-lockup intro-lockup">
+            <svg class="almadery-logo" viewBox="0 0 420 300" role="img" aria-labelledby="almadery-logo-title almadery-logo-desc">
+              <title id="almadery-logo-title">ALMADERY emblem and wordmark</title>
+              <desc id="almadery-logo-desc">A geometric A monogram formed from diamond facets inside a refined hallmark, above the ALMADERY wordmark.</desc>
+              <g class="emblem" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M210 24 316 84v120l-106 62-106-62V84L210 24Z" opacity=".72"/>
+                <path d="M210 54 284 197h-38l-14-31h-44l-14 31h-38L210 54Z"/>
+                <path d="M185 139h50"/>
+                <path d="M136 84h148M104 204h212M160 72l50 194 50-194" opacity=".38"/>
+                <circle cx="210" cy="134" r="12" opacity=".58"/>
+              </g>
+              <text x="210" y="274" text-anchor="middle" class="wordmark">ALMADERY</text>
+              <text x="210" y="296" text-anchor="middle" class="subtitle">Fine Diamonds &amp; Gold Jewellery</text>
+            </svg>
+            <p class="kicker">Fine Diamonds &amp; Gold Jewellery</p>
+            <h1 id="intro-title">A promise begins before it shines.</h1>
+          </div>
+          <p class="scroll-cue">Scroll to Discover</p>
+        </section>
+
+        <section class="scene scene-rough" data-scene="rough" aria-labelledby="rough-title">
+          <div class="scene-copy">
+            <p class="chapter">Chapter 1 / Rough Diamond</p>
+            <h2 id="rough-title">Every Masterpiece Begins Untouched</h2>
+            <p>Before brilliance, there is possibility. A rare form shaped by nature and waiting to be revealed.</p>
+          </div>
+          <div class="visual-stage visual-rough" role="img" aria-label="Rough uncut diamonds emerging from darkness with mineral texture and a narrow beam of light">
+            <div class="earth-shadow" aria-hidden="true"></div>
+            <svg class="rough-diamond diamond-primary depth-object" viewBox="0 0 320 320" aria-hidden="true">
+              <defs>
+                <linearGradient id="roughFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f3ead7" stop-opacity=".92"/>
+                  <stop offset="44%" stop-color="#7d766a" stop-opacity=".62"/>
+                  <stop offset="100%" stop-color="#2d2a27" stop-opacity=".98"/>
+                </linearGradient>
+                <filter id="roughNoise">
+                  <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="9"/>
+                  <feDisplacementMap in="SourceGraphic" scale="8"/>
+                </filter>
+              </defs>
+              <path d="M159 24 264 78l28 111-84 93-126-18-54-105 39-94Z" fill="url(#roughFacet)" filter="url(#roughNoise)"/>
+              <path d="M67 65 159 24l-18 99 123-45-56 204-67-159-59 141 59-141L28 159" fill="none" stroke="#f4ead9" stroke-opacity=".25" stroke-width="3"/>
+              <path d="M141 123 208 282M141 123l151 66M141 123 67 65" fill="none" stroke="#0d0b09" stroke-opacity=".36" stroke-width="2"/>
+            </svg>
+            <svg class="rough-diamond diamond-secondary depth-object" viewBox="0 0 180 180" aria-hidden="true">
+              <path d="M88 13 151 49l12 60-51 52-68-13-27-62 26-53Z" fill="#8f8879" opacity=".8"/>
+              <path d="M43 33 88 13l-5 72 68-36-39 112-29-76-39 63 39-63-66 1" fill="none" stroke="#e5d9c6" stroke-opacity=".24" stroke-width="2"/>
+            </svg>
+            <div class="dust-field" aria-hidden="true"></div>
+            <div class="light-blade" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="scene scene-polished" data-scene="polished" aria-labelledby="polished-title">
+          <div class="scene-copy align-right">
+            <p class="chapter">Chapter 2 / Polished Diamond</p>
+            <h2 id="polished-title">Precision Reveals the Light Within</h2>
+            <p>Each facet is refined with purpose, allowing light, clarity, and brilliance to emerge.</p>
+          </div>
+          <div class="visual-stage visual-polished" role="img" aria-label="A loose polished diamond with precise facets and controlled white reflections">
+            <div class="facet-aura" aria-hidden="true"></div>
+            <svg class="polished-diamond depth-object" viewBox="0 0 380 300" aria-hidden="true">
+              <defs>
+                <linearGradient id="polishedTop" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="42%" stop-color="#c9c4b8"/>
+                  <stop offset="100%" stop-color="#4d4a44"/>
+                </linearGradient>
+              </defs>
+              <path d="M92 62h196l56 72-154 136L36 134Z" fill="url(#polishedTop)" opacity=".92"/>
+              <path d="M92 62 36 134h308l-56-72H92Z" fill="#f7f4ee" opacity=".46"/>
+              <path d="M36 134 92 62l36 72 62-72 62 72 36-72 56 72M128 134l62 136 62-136M92 62l98 208 98-208" fill="none" stroke="#fff9ef" stroke-opacity=".58" stroke-width="3"/>
+              <path d="M36 134h308M128 134h124" fill="none" stroke="#15130f" stroke-opacity=".32" stroke-width="2"/>
+            </svg>
+            <div class="sharp-sweep" aria-hidden="true"></div>
+            <div class="cutting-lines" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="scene scene-gold" data-scene="gold" aria-labelledby="gold-title">
+          <div class="scene-copy">
+            <p class="chapter">Chapter 3 / Gold Craftsmanship</p>
+            <h2 id="gold-title">Gold, Shaped by the Human Hand</h2>
+            <p>Craftsmanship transforms precious material into form, balance, and lasting beauty.</p>
+          </div>
+          <div class="visual-stage visual-gold" role="img" aria-label="A refined jewelry workshop moment showing a gold ring band, precise tools, and warm controlled light">
+            <svg class="tool tool-one" viewBox="0 0 420 64" aria-hidden="true">
+              <path d="M14 34h250l72-19 70 19-70 19-72-19H14Z" fill="#8f8069" opacity=".72"/>
+              <path d="M265 34h140" stroke="#ecd6ad" stroke-width="3" opacity=".55"/>
+            </svg>
+            <svg class="gold-band depth-object" viewBox="0 0 420 300" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldStroke" x1="0%" y1="20%" x2="100%" y2="80%">
+                  <stop offset="0%" stop-color="#69543a"/>
+                  <stop offset="28%" stop-color="#e1bd7a"/>
+                  <stop offset="58%" stop-color="#80623b"/>
+                  <stop offset="100%" stop-color="#f4d597"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="210" cy="155" rx="124" ry="56" fill="none" stroke="url(#goldStroke)" stroke-width="24"/>
+              <ellipse cx="210" cy="155" rx="96" ry="34" fill="none" stroke="#130f0b" stroke-opacity=".68" stroke-width="16"/>
+              <path d="M154 105c26-18 86-24 122 1" fill="none" stroke="#fff2cf" stroke-opacity=".36" stroke-width="6"/>
+              <path d="M114 186c54 52 151 51 198 1" fill="none" stroke="#7d5a31" stroke-opacity=".55" stroke-width="7"/>
+            </svg>
+            <div class="bench-line" aria-hidden="true"></div>
+            <div class="warm-orbit" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="scene scene-setting" data-scene="setting" aria-labelledby="setting-title">
+          <div class="scene-copy align-right">
+            <p class="chapter">Chapter 4 / Setting the Diamond</p>
+            <h2 id="setting-title">Two Rare Elements. One Timeless Form.</h2>
+            <p>Diamond and gold come together through proportion, precision, and restraint.</p>
+          </div>
+          <div class="visual-stage visual-setting" role="img" aria-label="A polished diamond floating toward an open gold engagement ring setting">
+            <svg class="setting-ring depth-object" viewBox="0 0 480 360" aria-hidden="true">
+              <defs>
+                <linearGradient id="settingGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#6f5634"/>
+                  <stop offset="45%" stop-color="#e7c17c"/>
+                  <stop offset="100%" stop-color="#9b7442"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="240" cy="235" rx="118" ry="50" fill="none" stroke="url(#settingGold)" stroke-width="18"/>
+              <path d="M190 193c12-38 88-38 100 0" fill="none" stroke="url(#settingGold)" stroke-width="13" stroke-linecap="round"/>
+              <path d="M210 170v34M270 170v34M224 166v34M256 166v34" stroke="#d7ae68" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <svg class="setting-diamond depth-object" viewBox="0 0 220 170" aria-hidden="true">
+              <path d="M47 32h126l36 48-99 78L11 80Z" fill="#f8f3e8" opacity=".94"/>
+              <path d="M11 80h198M47 32l63 126 63-126M74 80l36 78 36-78M47 32l27 48 36-48 36 48 27-48" fill="none" stroke="#ffffff" stroke-opacity=".64" stroke-width="3"/>
+            </svg>
+            <div class="gold-lines" aria-hidden="true"></div>
+            <div class="union-light" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="scene scene-final" data-scene="final" aria-labelledby="final-title">
+          <div class="scene-copy">
+            <p class="chapter">Chapter 5 / Finished Engagement Ring</p>
+            <h2 id="final-title">A Timeless Promise, Perfected</h2>
+            <p>Created to hold a moment, express a promise, and endure beyond generations.</p>
+          </div>
+          <div class="visual-stage visual-final" role="img" aria-label="A completed gold engagement ring presented in a quiet ivory gallery spotlight">
+            <div class="gallery-plinth" aria-hidden="true"></div>
+            <svg class="finished-ring depth-object" viewBox="0 0 560 420" aria-hidden="true">
+              <defs>
+                <linearGradient id="finishedGold" x1="0%" y1="10%" x2="100%" y2="90%">
+                  <stop offset="0%" stop-color="#7b5d35"/>
+                  <stop offset="18%" stop-color="#f1cf90"/>
+                  <stop offset="48%" stop-color="#9a7140"/>
+                  <stop offset="76%" stop-color="#e6bd74"/>
+                  <stop offset="100%" stop-color="#6e512f"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="280" cy="266" rx="142" ry="60" fill="none" stroke="url(#finishedGold)" stroke-width="25"/>
+              <ellipse cx="280" cy="266" rx="110" ry="38" fill="none" stroke="#1a130c" stroke-opacity=".34" stroke-width="12"/>
+              <path d="M218 217c25-48 99-48 124 0" fill="none" stroke="url(#finishedGold)" stroke-width="18" stroke-linecap="round"/>
+              <path d="M248 185h64l25 35-57 54-57-54Z" fill="#f7f4ee"/>
+              <path d="M223 220h114M248 185l32 89 32-89M260 220l20 54 20-54M248 185l12 35 20-35 20 35 12-35" fill="none" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/>
+              <path d="M246 202c-10 8-16 14-20 23M314 202c10 8 16 14 20 23" fill="none" stroke="#d6ad65" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <div class="ring-reflection" aria-hidden="true"></div>
+            <div class="macro-glint" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="scene scene-brand" data-scene="brand" aria-labelledby="brand-title">
+          <div class="brand-reveal-card">
+            <div class="constructed-lines" aria-hidden="true"></div>
+            <div class="logo-lockup brand-lockup">
+              <svg class="almadery-logo" viewBox="0 0 420 300" role="img" aria-labelledby="brand-logo-title brand-logo-desc">
+                <title id="brand-logo-title">ALMADERY brand reveal</title>
+                <desc id="brand-logo-desc">The ALMADERY geometric A hallmark, wordmark, and Fine Diamonds & Gold Jewellery subtitle.</desc>
+                <g class="emblem" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M210 24 316 84v120l-106 62-106-62V84L210 24Z" opacity=".72"/>
+                  <path d="M210 54 284 197h-38l-14-31h-44l-14 31h-38L210 54Z"/>
+                  <path d="M185 139h50"/>
+                  <path d="M136 84h148M104 204h212M160 72l50 194 50-194" opacity=".38"/>
+                  <circle cx="210" cy="134" r="12" opacity=".58"/>
+                </g>
+                <text x="210" y="274" text-anchor="middle" class="wordmark">ALMADERY</text>
+                <text x="210" y="296" text-anchor="middle" class="subtitle">Fine Diamonds &amp; Gold Jewellery</text>
+              </svg>
+            </div>
+            <p class="chapter">Coming Soon</p>
+            <h2 id="brand-title">From Nature's Rarest Form to a Symbol That Lasts Forever</h2>
+          </div>
+        </section>
       </div>
-      <a class="btn ghost full" href="/admin">Admin Dashboard</a>
+    </section>
+
+    <section class="private-access" id="private-access" aria-labelledby="access-title">
+      <div class="access-bg" aria-hidden="true"></div>
+      <div class="access-card">
+        <svg class="footer-emblem" viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M60 9 105 35v50l-45 26-45-26V35L60 9Z" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M60 25 91 88H76l-6-14H50l-6 14H29L60 25Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M49 61h22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <p class="chapter">Private Invitation</p>
+        <h2 id="access-title">Enter the World of ALMADERY</h2>
+        <p>Join the private list for early access, collection previews, and the official unveiling.</p>
+
+        <form class="access-form" id="accessForm" novalidate>
+          <label for="email">Email address</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="emailStatus">
+            <button type="submit">
+              <span class="button-idle">Request Private Access</span>
+              <span class="button-loading" aria-hidden="true">Requesting...</span>
+            </button>
+          </div>
+          <p class="form-status" id="emailStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <footer class="minimal-footer" aria-label="ALMADERY footer">
+          <span>ALMADERY</span>
+          <a id="instagram" href="#instagram" aria-label="Instagram placeholder">Instagram</a>
+          <a href="mailto:contact@almadery.com">Contact</a>
+          <a id="privacy" href="#privacy">Privacy</a>
+          <small>&copy; 2026 ALMADERY</small>
+        </footer>
+      </div>
     </section>
   </main>
-  <script>
-    const grid = document.getElementById('operatorGrid');
-    const esc = (s) => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    function numberFromId(id, fallback){
-      const m = String(id || '').match(/(\d+)$/);
-      return m ? m[1] : String(fallback + 1);
-    }
-    async function loadOperators(){
-      try{
-        const res = await fetch('/api/operators', { cache: 'no-store' });
-        const data = await res.json();
-        if(!res.ok) throw new Error(data.error || 'Unable to load operators');
-        const operators = Array.isArray(data.operators) ? data.operators : [];
-        grid.innerHTML = operators.map((op, idx) => `
-          <a class="operator-choice" href="/worker/${esc(op.id)}">
-            <span>${esc(numberFromId(op.id, idx))}</span>
-            <b>${esc(op.name || op.id)}</b>
-            <em>Work Dashboard</em>
-          </a>
-        `).join('') || '<div class="small">No operators available.</div>';
-      }catch(err){
-        grid.innerHTML = `
-          <a class="operator-choice" href="/worker/operator1"><span>1</span><b>Operator 1</b><em>Work Dashboard</em></a>
-          <a class="operator-choice" href="/worker/operator2"><span>2</span><b>Operator 2</b><em>Work Dashboard</em></a>
-          <a class="operator-choice" href="/worker/operator3"><span>3</span><b>Operator 3</b><em>Work Dashboard</em></a>
-          <a class="operator-choice" href="/worker/operator4"><span>4</span><b>Operator 4</b><em>Work Dashboard</em></a>
-        `;
-      }
-    }
-    loadOperators();
-  </script>
-</body></html>
+</body>
+</html>
