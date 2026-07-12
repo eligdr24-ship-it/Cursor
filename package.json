@@ -1,12 +1,29 @@
 {
-  "name": "global-review-rotator-2-1",
-  "version": "2.1.0",
-  "description": "Shared link and text rotator with admin Excel upload.",
-  "main": "server.js",
+  "name": "almadery",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "ADMIN_PASSWORD=admin123 PORT=3000 node server.js"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
   },
-  "engines": { "node": ">=18" },
-  "dependencies": {}
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "tailwindcss": "^4.3.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  },
+  "description": "ALMADERY — Fine Diamonds & Gold Jewellery cinematic landing page"
 }
