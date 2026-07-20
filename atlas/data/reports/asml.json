@@ -1,0 +1,87 @@
+{
+  "ticker": "ASML",
+  "company": "ASML Holding N.V.",
+  "verdict": "PASS",
+  "convictionRating": 82,
+  "oneLiner": "A literal monopoly on the machines that make the modern world, with a 15-year demand runway underwritten by physics, not fashion.",
+  "generatedAt": "2026-07-20T00:00:00Z",
+  "mode": "demo",
+  "scores": {
+    "businessQuality": 9,
+    "moat": 10,
+    "management": 8,
+    "financials": 9,
+    "valuation": 6,
+    "tailwinds": 9,
+    "optionality": 7
+  },
+  "decisionGates": [
+    { "gate": "Credible long-term growth runway", "pass": true, "note": "Semiconductor content per device keeps rising; leading-edge capacity plans from TSMC, Samsung and Intel all route through ASML. EUV and High-NA adoption is a multi-decade cycle." },
+    { "gate": "Durable competitive advantage", "pass": true, "note": "Sole supplier of EUV lithography globally. Rebuilding this capability would take a competitor 15+ years, tens of billions of dollars, and a supplier network (Zeiss optics, Trumpf lasers) that is effectively exclusive." },
+    { "gate": "Strong management and capital allocation", "pass": true, "note": "Consistent R&D reinvestment through cycles, disciplined buybacks, transparent long-range targets that management has historically met or beaten." },
+    { "gate": "Valuation leaves meaningful upside", "pass": true, "note": "Not cheap, but the market persistently underestimates the length of the runway and the pricing power of a monopolist. Upside is driven by duration, not multiple expansion." },
+    { "gate": "Identifiable misconception or hidden value", "pass": true, "note": "Market treats ASML as a cyclical equipment vendor; the installed-base services business is a growing, recurring, high-margin annuity that gets little separate credit." }
+  ],
+  "antiHypeFlags": [
+    { "flag": "Thesis already widely accepted", "triggered": true, "note": "ASML's monopoly is well known. Conviction is reduced for lack of a contrarian edge; the edge here is duration, not discovery." },
+    { "flag": "Valuation assumes near-perfect execution", "triggered": false, "note": "Consensus embeds a normal cycle; it does not require flawless High-NA ramp." },
+    { "flag": "Future success already priced in", "triggered": false, "note": "Multiples are elevated but consistent with a monopoly compounding earnings low-teens for a decade." },
+    { "flag": "Narrative stronger than economics", "triggered": false, "note": "The economics (gross margin >50%, deep backlog, recurring service revenue) are stronger than the narrative." }
+  ],
+  "unfairAdvantages": [
+    "Sole-source proprietary technology (EUV / High-NA lithography)",
+    "Mission-critical product: no ASML, no leading-edge chips",
+    "Exclusive supplier network (Zeiss optics) that cannot be replicated",
+    "Extreme switching costs: fabs are designed around ASML tools",
+    "Regulatory position: export controls raise barriers for any challenger",
+    "Installed-base lock-in: decades of service and upgrade revenue per machine"
+  ],
+  "researchQuestions": [
+    { "question": "Why does this business deserve to exist?", "answer": "Every advance in computing depends on printing smaller transistors. ASML is the only company on Earth that builds the machines capable of doing this at the leading edge. It is not a participant in the semiconductor industry; it is a precondition for it." },
+    { "question": "What makes it difficult to replace or compete with?", "answer": "EUV took ASML ~20 years and >$10B of R&D, plus an irreplaceable supplier web. Nikon and Canon exited the race. A Chinese domestic effort remains many generations behind and is further constrained by export controls on components." },
+    { "question": "Why might the market be mispricing it today?", "answer": "The market prices ASML on the current capex cycle and treats order lumpiness as signal. It underweights (a) the service/upgrade annuity on a growing installed base, and (b) the fact that every AI, automotive and edge-compute roadmap terminates in an ASML purchase order." },
+    { "question": "What must happen for it to be worth substantially more in 10–15 years?", "answer": "High-NA EUV ramps through the 2020s-30s; installed base roughly doubles; service revenue compounds; gross margins expand toward 56-60%. None of these require heroic assumptions — only that Moore's-Law economics continue to be pursued." },
+    { "question": "What could completely invalidate the thesis?", "answer": "A commercially viable non-lithographic path to transistor scaling; a China-Taiwan conflict destroying leading-edge demand for years; or a physics wall that ends node shrinks and turns the installed base into a replacement-only market." }
+  ],
+  "sections": {
+    "executiveSummary": "ASML is the sole global supplier of EUV lithography machines, the single most complex tool in semiconductor manufacturing. The company combines monopoly economics, a growing recurring-revenue installed base, and a demand runway tied to the secular growth of computing itself. The thesis is widely known — which caps the conviction rating — but the durability and duration of the advantage remain underappreciated. Verdict: PASS, conviction 82/100.",
+    "investmentThesis": "Own the tollbooth of Moore's Law. ASML monetizes every leading-edge wafer fab built anywhere in the world, twice: first on the tool sale, then on decades of high-margin service, spares and upgrades. Duration, not discovery, is the edge: the market persistently prices 3-5 years of visibility on an asset with 15+ years of structural demand.",
+    "businessOverview": "ASML designs and assembles photolithography systems: DUV (mature, still ~half of revenue) and EUV/High-NA (leading edge, monopoly). Revenue splits into new systems and Installed Base Management (service + field upgrades), the latter recurring and growing with the fleet. Customers are concentrated: TSMC, Samsung, Intel, and memory makers.",
+    "industryAnalysis": "Semiconductor capital equipment is an oligopoly at every layer, but lithography is the only true monopoly at the leading edge. End-demand drivers — AI accelerators, automotive silicon, edge devices — all increase wafer demand. Geopolitics cuts both ways: export controls restrict China sales (~10-25% of revenue historically) but also entrench ASML's position by freezing challengers out of the supplier ecosystem.",
+    "competitivePosition": "No competitor exists in EUV. In DUV, Nikon and Canon persist at trailing edge with single-digit share of value. The realistic competitive threat is not a rival toolmaker but a scientific detour around lithography (e.g., advanced packaging reducing litho intensity) — real, monitorable, and slow-moving.",
+    "managementReview": "Management has a multi-decade record of technology-roadmap honesty: long-range targets are published, updated, and usually hit. Capital allocation is shareholder-aligned — R&D first, then dividends and steady buybacks; no empire-building M&A. Leadership transitions have been orderly, and the supplier co-investment model (taking stakes in Zeiss SMT) shows owner-like thinking.",
+    "financialAnalysis": "Gross margins ~51-53% trending up with EUV mix and services; operating margins >30%; ROIC well above 30% excluding excess cash. Net cash balance sheet. Free cash flow is lumpy with prepayments but structurally strong. Backlog provides multi-year revenue visibility unusual for capital equipment. The service segment grows monotonically with installed base regardless of the tool-order cycle.",
+    "hiddenAssets": "1) Installed-base annuity: every machine ever shipped generates service and upgrade revenue for 20-30 years; the market models this poorly. 2) Cymer (light sources) and the Zeiss SMT stake — vertically-integrated IP that is not separable but is irreplaceable. 3) Data: ASML's computational lithography and metrology software sees inside every leading fab, an underappreciated software/data business. 4) Pricing power reserve: ASML has historically underpriced EUV relative to the value delivered; latent margin exists.",
+    "risks": "China-Taiwan conflict (demand shock and customer concentration); export-control escalation eliminating China DUV revenue; a High-NA adoption delay compressing the growth window; a paradigm shift (chiplets/advanced packaging, photonics) reducing litho intensity per transistor; and the thesis's very popularity — the stock rarely gets cheap, so entry-point discipline matters.",
+    "valuationAssessment": "Historically trades 25-40x earnings. A monopoly compounding EPS low-to-mid teens with expanding margins justifies the upper half of that range. Expected returns come from earnings growth plus a modest dividend, not multiple expansion. Attractive on any cyclical drawdown; adequate, not exceptional, at full multiples. This is the weakest pillar of the thesis and the main reason conviction is 82 rather than 90+."
+  },
+  "scenarios": {
+    "bull": {
+      "summary": "AI-driven fab buildout persists through 2035, High-NA ramps on schedule, service revenue doubles, margins reach ~58%. Earnings compound ~16-18% for a decade.",
+      "drivers": ["High-NA adoption at all three leading-edge customers", "Installed base ~2x with rising service intensity", "China restrictions loosen at trailing edge"]
+    },
+    "base": {
+      "summary": "Normal semi cyclicality continues, EUV intensity rises steadily, earnings compound ~12-14%, multiple roughly flat. Stock roughly doubles-to-triples over 10 years including dividends.",
+      "drivers": ["Leading-edge capex grows mid-to-high single digits", "Services grow low teens", "Buybacks retire ~1-2% of shares annually"]
+    },
+    "bear": {
+      "summary": "Geopolitical shock or a litho-intensity plateau caps growth; earnings stagnate for 3-5 years and the multiple derates to high teens. Permanent capital impairment is unlikely; time-value loss is the real risk.",
+      "drivers": ["Taiwan conflict or severe export-control escalation", "Advanced packaging substitutes for node shrinks", "High-NA economics disappoint customers"]
+    }
+  },
+  "keyMetricsToMonitor": [
+    "EUV + High-NA bookings and backlog composition",
+    "Installed Base Management revenue growth rate",
+    "Gross margin trajectory (target 56-60% by 2030)",
+    "Litho intensity per wafer at N2/A16 nodes and beyond",
+    "China revenue share and export-control changes",
+    "Leading-edge capex guidance from TSMC, Samsung, Intel"
+  ],
+  "whatWouldChangeMyMind": [
+    "Evidence that advanced packaging is structurally reducing lithography spend per transistor",
+    "A credible EUV-class competitor reaching pilot production (none exists today)",
+    "Management beginning large diversifying acquisitions outside lithography",
+    "Two consecutive years of installed-base service revenue decline"
+  ],
+  "portfolioQuestion": "Yes — with sizing discipline. ASML is one of perhaps five businesses on Earth with a true monopoly on a growing, mission-critical market. It earns a place among 20 positions held for 15 years, provided it is bought at a normal-cycle multiple rather than at euphoric peaks."
+}

@@ -1,0 +1,82 @@
+{
+  "ticker": "PTON",
+  "company": "Peloton Interactive, Inc.",
+  "verdict": "REJECT",
+  "convictionRating": 18,
+  "oneLiner": "A beloved brand attached to a structurally difficult business: hardware economics, shrinking engagement, and no durable moat against cheaper substitutes.",
+  "generatedAt": "2026-07-20T00:00:00Z",
+  "mode": "demo",
+  "scores": {
+    "businessQuality": 4,
+    "moat": 3,
+    "management": 4,
+    "financials": 3,
+    "valuation": 5,
+    "tailwinds": 5,
+    "optionality": 4
+  },
+  "decisionGates": [
+    { "gate": "Credible long-term growth runway", "pass": false, "note": "Connected-fitness hardware TAM proved far smaller than pandemic-era extrapolations. Subscriber base has plateaued and churn rises as the installed hardware base ages." },
+    { "gate": "Durable competitive advantage", "pass": false, "note": "Content is replicable (Apple Fitness+, YouTube, gym apps), hardware is commoditized, and the community effect has not translated into pricing power or retention strong enough to matter." },
+    { "gate": "Strong management and capital allocation", "pass": false, "note": "History of severe demand misforecasting, factory overinvestment at the cycle peak, repeated strategy pivots and leadership turnover. Recent cost discipline is real but reactive." },
+    { "gate": "Valuation leaves meaningful upside", "pass": true, "note": "The stock is cheap on revenue. But per the core principles: cheap without a durable advantage is not attractive." },
+    { "gate": "Identifiable misconception or hidden value", "pass": false, "note": "The bull case (brand + subscription mix shift) is well known and already argued publicly for years. No differentiated insight identified." }
+  ],
+  "antiHypeFlags": [
+    { "flag": "Thesis already widely accepted", "triggered": true, "note": "The 'turnaround + takeover target' narrative is consensus among the remaining bulls." },
+    { "flag": "Valuation assumes near-perfect execution", "triggered": false, "note": "Expectations are low; this is the one thing PTON has going for it." },
+    { "flag": "Future success already priced in", "triggered": false, "note": "Little success is priced in." },
+    { "flag": "Narrative stronger than economics", "triggered": true, "note": "The brand-and-community story consistently outruns the unit economics: negative-to-thin hardware margins, high subscriber-acquisition cost, and secular churn." }
+  ],
+  "unfairAdvantages": [
+    "Strong consumer brand (genuine, but not monetizable into pricing power)",
+    "Instructor talent roster (mobile, and has proven poachable)"
+  ],
+  "researchQuestions": [
+    { "question": "Why does this business deserve to exist?", "answer": "It created the connected-fitness category and still delivers a best-in-class home workout experience with real customer love. The product deserves to exist; the question is whether the business model does at this scale." },
+    { "question": "What makes it difficult to replace or compete with?", "answer": "Very little, durably. The bike is commodity hardware, classes are substitutable with far cheaper alternatives, and switching costs are one canceled subscription. Brand loyalty is real but decays with the hardware." },
+    { "question": "Why might the market be mispricing it today?", "answer": "The only plausible mispricing is excessive pessimism: a stabilized subscription business could be worth more than the enterprise value implies. But this is a value-with-catalyst trade, not a 10-15 year compounder question — and this framework is not built for trades." },
+    { "question": "What must happen for it to be worth substantially more in 10–15 years?", "answer": "It would need to become a capital-light content/app platform with growing subscribers independent of its own hardware — a transition management has attempted for years with limited traction against free and bundled competitors." },
+    { "question": "What could completely invalidate the thesis?", "answer": "The rejection thesis would be wrong if app-only subscriptions inflected sharply upward with strong retention and near-zero acquisition cost, proving a genuine platform business hiding inside the hardware company." }
+  ],
+  "sections": {
+    "executiveSummary": "Peloton is a strong brand and a weak business. It fails three of five decision gates: no credible long-term growth runway at compelling economics, no durable moat, and a management record marked by severe capital-allocation errors. The stock's cheapness is acknowledged and is insufficient. Verdict: REJECT, conviction 18/100.",
+    "investmentThesis": "There is no long-term ownership thesis that survives the framework. The strongest available argument — cheap stock, loyal subscriber base, possible acquisition — is a special-situations trade with a 1-3 year horizon, explicitly outside this mandate.",
+    "businessOverview": "Peloton sells connected fitness hardware (bikes, treadmills, rowers) and a content subscription (~$44/month all-access; cheaper app-only tiers). Subscription revenue now exceeds hardware and carries ~65%+ gross margins, but subscriber growth is flat-to-negative and hardware remains a drag.",
+    "industryAnalysis": "Home fitness is a real, permanent category post-pandemic, but it is intensely competitive and largely commoditized: free content (YouTube), bundled content (Apple Fitness+), budget hardware clones, and resurgent gyms. Category tailwinds exist (health awareness, GLP-1-era fitness spending) but accrue to no one player in particular.",
+    "competitivePosition": "Peloton is the premium brand in a category where premium positioning has not produced premium economics. Its content library and instructor brands are its best assets, but both are replicable and the company has no structural cost, network, or switching-cost advantage.",
+    "managementReview": "The 2020-2022 period featured one of the era's notable capital-allocation failures: extrapolating pandemic demand into a $400M+ factory investment, followed by inventory writedowns, layoffs, and a CEO change. Subsequent management has cut costs competently, but the through-cycle record does not clear the bar of 'thinks like owners, allocates capital wisely.'",
+    "financialAnalysis": "Revenue has declined for multiple consecutive years from the pandemic peak. Free cash flow has been rescued by cost cuts, not growth. The balance sheet carries meaningful debt from the crisis period. Subscription gross profit is the one healthy organ, but it funds a hardware business that struggles to break even and a marketing budget required just to hold subscribers flat.",
+    "hiddenAssets": "Candidates examined: (1) the content library and instructor brands — real value, but perishable and people-dependent; (2) the subscriber base as an acquisition target for Apple/Amazon/Nike — plausible, but a takeover hope is not an investment thesis; (3) the app as a standalone platform — tested in market and so far unable to grow against free alternatives. No hidden asset changes the verdict.",
+    "risks": "Continued subscriber erosion as hardware ages; price competition from bundled tech-giant offerings; debt refinancing pressure; brand dilution from discounting; instructor attrition. For a would-be contrarian buyer, the main risk is that cheap gets cheaper — there is no floor from durable economics.",
+    "valuationAssessment": "On EV/subscription-gross-profit the stock is inexpensive, and a stabilized business could support meaningful upside from a low base. This is honestly acknowledged — and rejected as grounds for inclusion. The framework requires durable advantage first, price second. Peloton fails the first test, so the second is moot."
+  },
+  "scenarios": {
+    "bull": {
+      "summary": "Subscription stabilizes, app tier finds product-market fit, company is acquired at a premium or compounds as a lean content business. Stock could multiply from a depressed base.",
+      "drivers": ["App subscriber inflection", "Strategic acquisition", "Hardware-as-a-service model improves unit economics"]
+    },
+    "base": {
+      "summary": "A smaller, cost-disciplined company managing a slowly melting subscriber base. Equity drifts with sentiment; no durable compounding.",
+      "drivers": ["Flat-to-declining subscribers", "Cost cuts offset revenue decline", "Debt serviced but constraining"]
+    },
+    "bear": {
+      "summary": "Churn accelerates as hardware ages, competition undercuts pricing, refinancing tightens the noose, and equity value erodes toward option value.",
+      "drivers": ["Aging installed base churns", "Apple/Amazon bundle fitness content at near-zero price", "Debt maturity pressure"]
+    }
+  },
+  "keyMetricsToMonitor": [
+    "Ending all-access subscribers and monthly churn rate",
+    "App-only subscriber growth (the only path to a platform thesis)",
+    "Subscription gross profit vs. total operating expenses",
+    "Free cash flow excluding one-time restructuring",
+    "Debt maturities and refinancing terms"
+  ],
+  "whatWouldChangeMyMind": [
+    "Four consecutive quarters of app-subscriber growth >20% with churn below 1.5%/month",
+    "Evidence of pricing power: a price increase with no measurable churn impact",
+    "A capital allocation record rebuilt over 3+ years under stable leadership",
+    "Hardware segment reaching sustainable positive gross margin without discount-driven volume"
+  ],
+  "portfolioQuestion": "No. Would this deserve one of only 20 positions held for 15 years? Peloton fails the moat gate, the runway gate, and the management gate. A loved product is not a durable business, and a cheap stock is not a substitute for a competitive advantage. REJECT."
+}
