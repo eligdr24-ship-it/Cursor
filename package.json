@@ -1,12 +1,51 @@
 {
-  "name": "global-review-rotator-2-1",
-  "version": "2.1.0",
-  "description": "Shared link and text rotator with admin Excel upload.",
-  "main": "server.js",
+  "name": "control-tower-ai",
+  "version": "0.1.0",
+  "description": "AI-powered Google Business Profile management platform for agencies.",
+  "type": "module",
+  "main": "dist/server/index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "ADMIN_PASSWORD=admin123 PORT=3000 node server.js"
+    "dev": "tsx watch src/server/index.ts",
+    "dev:client": "vite --host 0.0.0.0",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:client": "vite build",
+    "start": "node dist/server/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.client.json --noEmit"
   },
-  "engines": { "node": ">=18" },
-  "dependencies": {}
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "morgan": "^1.11.0",
+    "pg": "^8.22.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "redis": "^6.0.1",
+    "uuid": "^14.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^26.0.1",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/supertest": "^7.2.0",
+    "@vitejs/plugin-react": "^6.0.3",
+    "supertest": "^7.2.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0",
+    "vitest": "^4.1.9"
+  }
 }
