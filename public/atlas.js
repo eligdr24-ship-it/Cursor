@@ -99,6 +99,26 @@ function evidenceStrength(text, moatCount) {
 function calculate() {
   const moatValues = checkedValues('moats');
   const hypeValues = checkedValues('hype');
+  const hasMeaningfulInput = [
+    'company',
+    'overview',
+    'mispricing',
+    'moatEvidence',
+    'hiddenAssets',
+    'risks'
+  ].some(name => String(field(name).value || '').trim()) || moatValues.length || hypeValues.length;
+
+  if (!hasMeaningfulInput) {
+    return {
+      score: 0,
+      rating: 'Not enough inputs yet',
+      gates: [],
+      hypeValues,
+      moatValues,
+      portfolioDecision: 'No'
+    };
+  }
+
   const weighted = Object.entries(weights).reduce((sum, [name, weight]) => {
     return sum + (scoreInput(name) / 10) * weight;
   }, 0);
@@ -181,6 +201,9 @@ function generateReport(event) {
 
     <h2>Investment Thesis</h2>
     <p>${clean(field('mispricing').value)} For the company to be worth substantially more in 10-15 years, the growth runway must remain open, reinvestment must stay attractive, and the identified advantages must translate into durable free cash flow growth.</p>
+
+    <h2>Why This Business Deserves to Exist</h2>
+    <p>${clean(field('overview').value, 'The preview needs a sharper explanation of the customer problem, mission-criticality, and why customers choose this company instead of alternatives.')}</p>
 
     <h2>Business Overview</h2>
     <p>${clean(field('overview').value)}</p>
