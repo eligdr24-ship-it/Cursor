@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Atlas — Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- LANDING -->
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="nav-mark" href="#top">Atlas</a>
+      <div class="nav-links">
+        <a href="#framework">Framework</a>
+        <a href="#dossier">Sample dossier</a>
+        <a href="#roadmap">Scope</a>
+      </div>
+      <a class="nav-cta" href="#dossier">Open preview</a>
+    </nav>
+
+    <div class="hero-stage">
+      <p class="kicker">Long-horizon equity research</p>
+      <h1 class="brand">Project Atlas</h1>
+      <p class="lede">
+        Find businesses worth owning for 15 years — before the market treats them as obvious.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#dossier">View sample dossier</a>
+        <a class="btn ghost" href="#roadmap">What this preview covers</a>
+      </div>
+    </div>
+
+    <div class="hero-map" aria-hidden="true">
+      <svg viewBox="0 0 800 320" fill="none">
+        <path class="contour" d="M40 220 C120 180, 180 260, 260 200 S420 120, 500 170 S660 250, 760 190" />
+        <path class="contour delay" d="M20 260 C140 230, 200 290, 300 240 S480 160, 580 210 S700 280, 780 230" />
+        <circle class="pin" cx="260" cy="200" r="5" />
+        <circle class="pin delay" cx="500" cy="170" r="5" />
+        <circle class="pin delay2" cx="580" cy="210" r="5" />
+      </svg>
+    </div>
+  </header>
+
+  <!-- FRAMEWORK -->
+  <section class="section" id="framework">
+    <div class="section-head">
+      <h2>Five questions. Then eliminate.</h2>
+      <p>Atlas does not hunt excitement. It filters until only durable compounders remain.</p>
+    </div>
+
+    <ol class="questions">
+      <li><span>01</span><p>Why does this business deserve to exist?</p></li>
+      <li><span>02</span><p>What makes it difficult to replace or compete with?</p></li>
+      <li><span>03</span><p>Why might the market be mispricing it today?</p></li>
+      <li><span>04</span><p>What must happen for it to be worth substantially more in 10–15 years?</p></li>
+      <li><span>05</span><p>What could completely invalidate the thesis?</p></li>
+    </ol>
+
+    <div class="gates">
+      <h3>Decision gates — fail any one, reject</h3>
+      <ul class="gate-list">
+        <li class="pass"><strong>Growth runway</strong> Credible 10–15 year demand path</li>
+        <li class="pass"><strong>Durable advantage</strong> Moat that compounds, not fades</li>
+        <li class="pass"><strong>Capital allocation</strong> Owner-minded management</li>
+        <li class="warn"><strong>Valuation</strong> Upside not already priced for perfection</li>
+        <li class="pass"><strong>Misconception</strong> Identifiable gap vs consensus</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DOSSIER -->
+  <section class="section dossier" id="dossier">
+    <div class="section-head">
+      <p class="eyebrow">Illustrative sample — not a recommendation</p>
+      <h2>Company dossier</h2>
+      <p>Preview of the full research output a completed Atlas pass would produce.</p>
+    </div>
+
+    <article class="card-shell report">
+      <header class="report-top">
+        <div>
+          <p class="ticker">MERIDIAN · MDRN</p>
+          <h3>Meridian Process Systems</h3>
+          <p class="tagline">Mission-critical process control software for regulated industrial plants</p>
+        </div>
+        <div class="conviction" data-score="72">
+          <div class="ring" style="--p:72">
+            <span>72</span>
+          </div>
+          <p>Conviction<br /><small>0–100</small></p>
+        </div>
+      </header>
+
+      <div class="verdict">
+        <p><strong>Would this deserve 1 of 20 portfolio seats for 15 years?</strong></p>
+        <p class="answer maybe">Conditional yes — quality is high; valuation gate is the constraint. Preview data only.</p>
+      </div>
+
+      <div class="grid-2">
+        <section>
+          <h4>Executive summary</h4>
+          <p>
+            Meridian sells plant-level control software that sits between sensors and operators in chemical,
+            pharma, and food plants. Switching costs are high once validated; revenue is ~78% recurring.
+            The market still prices it like a cyclical industrial toolkit rather than a sticky software layer
+            with expanding attach rates.
+          </p>
+        </section>
+        <section>
+          <h4>Investment thesis</h4>
+          <p>
+            If Meridian continues converting installed hardware relationships into multi-module SaaS while
+            keeping churn below 4%, free-cash-flow compounding can re-rate the business from “industrial
+            supplier” to “regulated workflow platform” over a decade.
+          </p>
+        </section>
+      </div>
+
+      <section>
+        <h4>Business overview</h4>
+        <p>
+          Founded as an instrumentation integrator; today ~62% of revenue is software subscriptions,
+          23% professional services, 15% legacy hardware. Customers are mid-to-large plants where downtime
+          and regulatory failure are existential costs. Average contract life 6+ years.
+        </p>
+      </section>
+
+      <div class="grid-2">
+        <section>
+          <h4>Competitive position</h4>
+          <ul class="plain">
+            <li>High switching costs after plant validation</li>
+            <li>Regulatory documentation moat (audit trails)</li>
+            <li>Distribution via installed base + OEMs</li>
+            <li>Weakness: hyperscale cloud vendors adjacent</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Management &amp; capital</h4>
+          <ul class="plain">
+            <li>CEO owns ~9% economically</li>
+            <li>Buybacks only after organic reinvestment</li>
+            <li>No empire-building M&amp;A in last 5 years</li>
+            <li>Comp tied to FCF/share, not revenue</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h4>Financial snapshot <span class="muted">(sample)</span></h4>
+        <div class="metrics">
+          <div><span>Revenue CAGR 5y</span><strong>14%</strong></div>
+          <div><span>Gross margin</span><strong>71%</strong></div>
+          <div><span>FCF margin</span><strong>22%</strong></div>
+          <div><span>ROIC</span><strong>18%</strong></div>
+          <div><span>Net cash</span><strong>$410M</strong></div>
+          <div><span>Recurring rev</span><strong>78%</strong></div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Hidden assets</h4>
+        <ul class="plain">
+          <li>Validated plant telemetry archive (rare training set for process AI)</li>
+          <li>OEM certification network that new entrants cannot shortcut</li>
+          <li>Under-monetized modules already deployed but unused (~30% attach gap)</li>
+          <li>Potential services carve-out if software multiple expands</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Risks</h4>
+        <ul class="plain risk">
+          <li>Cloud platform vendors bundle adjacent monitoring</li>
+          <li>Customer concentration in chemicals cycle</li>
+          <li>Regulatory change that commoditizes audit features</li>
+          <li>Key-person risk in domain engineering talent</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Scenarios (10–15 year)</h4>
+        <div class="scenarios">
+          <article>
+            <h5>Bull · 25%</h5>
+            <p>Attach rates hit 70%, AI process layer becomes standard, FCF grows ~18% CAGR. Multiple expands.</p>
+          </article>
+          <article>
+            <h5>Base · 50%</h5>
+            <p>Steady share gains, mid-teens FCF growth, modest re-rating as mix shifts to software.</p>
+          </article>
+          <article>
+            <h5>Bear · 25%</h5>
+            <p>Platform encroachment + cyclical pause; growth slows to high-single digits, multiple compresses.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section>
+          <h4>Valuation assessment</h4>
+          <p>
+            At ~28× NTM FCF, the stock embeds solid execution but not a full platform outcome.
+            Upside exists if mix and attach rates surprise; limited margin of safety if growth stalls.
+            <em>Gate status: yellow — acceptable only with position sizing discipline.</em>
+          </p>
+        </section>
+        <section>
+          <h4>Monitor next</h4>
+          <ul class="plain">
+            <li>Net revenue retention</li>
+            <li>Module attach rate</li>
+            <li>Logo churn</li>
+            <li>FCF conversion</li>
+            <li>Competitive win/loss vs cloud suites</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h4>What would change our mind</h4>
+        <p>
+          <strong>Upgrade:</strong> sustained NRR &gt;115% with rising AI attach and no share loss to platforms.<br />
+          <strong>Kill:</strong> structural churn above 8%, or clear evidence customers prefer bundled hyperscaler stacks.
+        </p>
+      </section>
+    </article>
+  </section>
+
+  <!-- ROADMAP / EFFORT -->
+  <section class="section" id="roadmap">
+    <div class="section-head">
+      <h2>Build scope (preview vs full system)</h2>
+      <p>Effort framed by subsystems — not calendar promises.</p>
+    </div>
+
+    <div class="phases">
+      <article>
+        <p class="phase-label">You are here</p>
+        <h3>Preview</h3>
+        <p>Brand shell, framework UI, one sample dossier, conviction + gates visualization.</p>
+        <ul>
+          <li>Static front-end only</li>
+          <li>No live data</li>
+          <li>No AI generation</li>
+        </ul>
+      </article>
+      <article>
+        <p class="phase-label">MVP</p>
+        <h3>Research workbook</h3>
+        <p>Manual company intake, scored rubrics, saved dossiers, decision-gate enforcement.</p>
+        <ul>
+          <li>Local/cloud persistence</li>
+          <li>Rubric scoring engine</li>
+          <li>Export PDF / markdown</li>
+        </ul>
+      </article>
+      <article>
+        <p class="phase-label">Full Atlas</p>
+        <h3>Research operating system</h3>
+        <p>Filings ingestion, AI-assisted drafts, screening, ≤20 seat portfolio, thesis monitors.</p>
+        <ul>
+          <li>Data + model integrations</li>
+          <li>Anti-hype / ranking engine</li>
+          <li>Alerts when kill criteria trip</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="improve">
+      <h3>Suggested upgrades to your methodology</h3>
+      <ol>
+        <li><strong>Split scores:</strong> Business quality vs valuation as separate axes — never blend into one vanity number.</li>
+        <li><strong>Evidence citations:</strong> Every claim must link to a filing, transcript, or primary source.</li>
+        <li><strong>Moat trajectory:</strong> Score expanding / stable / eroding — static moats decay silently.</li>
+        <li><strong>Steelman bear first:</strong> Write the kill case before the bull case to reduce confirmation bias.</li>
+        <li><strong>Probability-weighted scenarios:</strong> Require explicit % weights that sum to 100.</li>
+        <li><strong>Portfolio scarcity test:</strong> Rank vs current 20 seats — absolute “good” is not enough.</li>
+        <li><strong>Living thesis journal:</strong> Quarterly check against kill criteria; auto-flag drift.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <strong>Project Atlas</strong>
+      <span>Preview build · methodology workstation</span>
+    </div>
+    <p>Not investment advice. Sample company is fictional for UI demonstration.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

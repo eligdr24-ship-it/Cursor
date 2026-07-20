@@ -1,0 +1,10 @@
+{
+  "name": "project-atlas-preview",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project Atlas research workstation — UI preview only",
+  "scripts": {
+    "start": "npx --yes serve public -p 4173",
+    "preview": "npx --yes serve public -p 4173"
+  }
+}
