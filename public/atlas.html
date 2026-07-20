@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Project Atlas preview: a guided long-term equity research report builder for identifying exceptional public companies.">
+  <meta name="theme-color" content="#0b1120">
+  <title>Project Atlas Preview</title>
+  <link rel="stylesheet" href="/atlas.css">
+  <script defer src="/atlas.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar" aria-label="Project Atlas navigation">
+      <a class="brand" href="#top" aria-label="Project Atlas home">
+        <span class="brand-mark">A</span>
+        <span>Project Atlas</span>
+      </a>
+      <div class="topbar-links">
+        <a href="#builder">Build Preview</a>
+        <a href="#framework">Framework</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Institutional-quality research preview</p>
+        <h1>Find businesses that could deserve a 15-year portfolio position.</h1>
+        <p class="lede">
+          This preview turns your company notes into a disciplined Project Atlas report:
+          business quality, moat, management, hidden assets, valuation, risks, and conviction.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#builder">Start preview report</a>
+          <button class="button secondary" type="button" id="loadSample">Load sample inputs</button>
+        </div>
+        <p class="disclaimer">
+          Preview version only. It does not pull live filings, prices, analyst estimates, or news.
+          It grades the evidence you provide and highlights research gaps before full automation.
+        </p>
+      </div>
+
+      <aside class="score-card" aria-labelledby="scoreTitle">
+        <p class="card-kicker">Preview Output</p>
+        <h2 id="scoreTitle">Conviction Rating</h2>
+        <div class="score-ring" id="scoreRing" style="--score:0">
+          <span id="liveScore">0</span>
+          <small>/100</small>
+        </div>
+        <p id="liveDecision">Not enough inputs yet.</p>
+        <ul class="mini-checklist">
+          <li>Decision gates</li>
+          <li>Anti-hype filter</li>
+          <li>Hidden asset review</li>
+          <li>Bull / base / bear case</li>
+        </ul>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="panel intro-panel" aria-labelledby="previewTitle">
+      <div>
+        <p class="eyebrow">What this preview proves</p>
+        <h2 id="previewTitle">One excellent report before the full research system.</h2>
+      </div>
+      <div class="preview-points">
+        <article>
+          <h3>Guided research intake</h3>
+          <p>Capture the thesis, moat, management signals, financial evidence, optionality, and risks in one workflow.</p>
+        </article>
+        <article>
+          <h3>Transparent scoring</h3>
+          <p>Separate business quality from valuation and reduce conviction when decision gates fail.</p>
+        </article>
+        <article>
+          <h3>Report preview</h3>
+          <p>Generate a shareable draft that shows where the thesis is strong, weak, or speculative.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="workspace" id="builder" aria-labelledby="builderTitle">
+      <form class="builder" id="researchForm">
+        <div class="section-heading">
+          <p class="eyebrow">Research Builder</p>
+          <h2 id="builderTitle">Company inputs</h2>
+          <p>Use plain-language notes. The preview will structure the report and expose missing evidence.</p>
+        </div>
+
+        <fieldset>
+          <legend>Company basics</legend>
+          <div class="field-grid two">
+            <label>
+              Company name
+              <input name="company" type="text" placeholder="Example: Costco Wholesale" autocomplete="organization" required>
+            </label>
+            <label>
+              Ticker
+              <input name="ticker" type="text" placeholder="Example: COST" autocomplete="off">
+            </label>
+          </div>
+          <label>
+            What does the business do?
+            <textarea name="overview" rows="4" placeholder="Describe customers, products, revenue model, segments, and why the company deserves to exist."></textarea>
+          </label>
+          <label>
+            Why might the market be mispricing it today?
+            <textarea name="mispricing" rows="3" placeholder="What misconception, temporary issue, hidden asset, or underappreciated growth engine is the market missing?"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Unfair advantage filter</legend>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" name="moats" value="strong brand"> Strong brand</label>
+            <label><input type="checkbox" name="moats" value="high switching costs"> High switching costs</label>
+            <label><input type="checkbox" name="moats" value="network effects"> Network effects</label>
+            <label><input type="checkbox" name="moats" value="regulatory barriers"> Regulatory barriers</label>
+            <label><input type="checkbox" name="moats" value="proprietary technology"> Proprietary technology</label>
+            <label><input type="checkbox" name="moats" value="manufacturing expertise"> Manufacturing expertise</label>
+            <label><input type="checkbox" name="moats" value="distribution advantage"> Distribution advantage</label>
+            <label><input type="checkbox" name="moats" value="mission-critical product"> Mission-critical product</label>
+          </div>
+          <label>
+            Moat evidence
+            <textarea name="moatEvidence" rows="4" placeholder="What proof supports the moat? Retention, pricing power, scale economics, customer behavior, patents, regulation, or distribution reach."></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Quality scores</legend>
+          <p class="field-note">Score each dimension from 0 to 10 based on evidence available today.</p>
+          <div class="slider-grid">
+            <label>Growth runway <input name="growth" type="range" min="0" max="10" value="5"><span data-output="growth">5</span></label>
+            <label>Margins / unit economics <input name="margins" type="range" min="0" max="10" value="5"><span data-output="margins">5</span></label>
+            <label>ROIC / reinvestment <input name="roic" type="range" min="0" max="10" value="5"><span data-output="roic">5</span></label>
+            <label>Free cash flow quality <input name="fcf" type="range" min="0" max="10" value="5"><span data-output="fcf">5</span></label>
+            <label>Balance sheet strength <input name="balance" type="range" min="0" max="10" value="5"><span data-output="balance">5</span></label>
+            <label>Management / allocation <input name="management" type="range" min="0" max="10" value="5"><span data-output="management">5</span></label>
+            <label>Industry tailwinds <input name="tailwinds" type="range" min="0" max="10" value="5"><span data-output="tailwinds">5</span></label>
+            <label>Valuation upside <input name="valuation" type="range" min="0" max="10" value="5"><span data-output="valuation">5</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Evidence and optionality</legend>
+          <div class="field-grid two">
+            <label>
+              Hidden assets
+              <textarea name="hiddenAssets" rows="4" placeholder="Subsidiaries, IP, infrastructure, data, distribution, strategic stakes, spin-off potential, or underappreciated segments."></textarea>
+            </label>
+            <label>
+              Second growth engines
+              <textarea name="growthEngines" rows="4" placeholder="New products, geographic expansion, platform extensions, ecosystem expansion, or adjacent markets."></textarea>
+            </label>
+          </div>
+          <label>
+            Management review
+            <textarea name="managementNotes" rows="3" placeholder="Owner mindset, incentives, capital allocation, insider ownership, candor, and long-term discipline."></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Anti-hype and risks</legend>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" name="hype" value="The thesis is already widely accepted."> Thesis widely accepted</label>
+            <label><input type="checkbox" name="hype" value="Valuation assumes near-perfect execution."> Valuation prices perfection</label>
+            <label><input type="checkbox" name="hype" value="Future success appears reflected in the stock price."> Success already reflected</label>
+            <label><input type="checkbox" name="hype" value="Narrative is stronger than current economics."> Narrative stronger than economics</label>
+          </div>
+          <label>
+            Key risks and thesis invalidators
+            <textarea name="risks" rows="4" placeholder="Competition, regulation, technology shifts, margin pressure, leverage, cyclicality, execution risk, valuation risk, or customer concentration."></textarea>
+          </label>
+          <label>
+            What would change your mind?
+            <textarea name="changeMind" rows="3" placeholder="Specific evidence that would invalidate or materially weaken the thesis."></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Scenario setup</legend>
+          <div class="field-grid three">
+            <label>
+              Bull case
+              <textarea name="bull" rows="4" placeholder="What must go right for exceptional shareholder value creation?"></textarea>
+            </label>
+            <label>
+              Base case
+              <textarea name="base" rows="4" placeholder="Most probable long-term outcome if execution is solid but imperfect."></textarea>
+            </label>
+            <label>
+              Bear case
+              <textarea name="bear" rows="4" placeholder="How could the thesis disappoint even if the company survives?"></textarea>
+            </label>
+          </div>
+          <label>
+            Key metrics to monitor
+            <textarea name="metrics" rows="3" placeholder="Revenue growth, retention, gross margin, ROIC, FCF conversion, leverage, customer growth, churn, segment KPIs, valuation multiples."></textarea>
+          </label>
+        </fieldset>
+
+        <div class="builder-actions">
+          <button class="button primary" type="submit">Generate research preview</button>
+          <button class="button secondary" type="reset">Reset inputs</button>
+        </div>
+      </form>
+
+      <aside class="report-shell" aria-labelledby="reportTitle">
+        <div class="report-toolbar">
+          <div>
+            <p class="eyebrow">Generated Preview</p>
+            <h2 id="reportTitle">Research report</h2>
+          </div>
+          <div class="toolbar-actions">
+            <button class="button ghost" type="button" id="copyReport">Copy</button>
+            <button class="button ghost" type="button" id="printReport">Print</button>
+          </div>
+        </div>
+        <article class="report" id="reportOutput">
+          <p class="placeholder">Complete the form and generate a preview report. The output will appear here.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="panel framework" id="framework" aria-labelledby="frameworkTitle">
+      <div>
+        <p class="eyebrow">Atlas Framework</p>
+        <h2 id="frameworkTitle">Decision gates used in the preview</h2>
+      </div>
+      <ol class="gate-list">
+        <li>No credible long-term growth runway.</li>
+        <li>No durable competitive advantage.</li>
+        <li>Weak management or poor capital allocation.</li>
+        <li>Valuation leaves little upside.</li>
+        <li>No identifiable market misconception or hidden value.</li>
+      </ol>
+    </section>
+
+    <section class="panel roadmap" id="roadmap" aria-labelledby="roadmapTitle">
+      <div>
+        <p class="eyebrow">Suggested build path</p>
+        <h2 id="roadmapTitle">From preview to full system</h2>
+      </div>
+      <div class="roadmap-grid">
+        <article>
+          <span>01</span>
+          <h3>Preview</h3>
+          <p>Single-company guided report builder, transparent scoring, copy/print output, and research gaps.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>MVP</h3>
+          <p>Saved reports, watchlist, company comparison, assumptions, and structured evidence tracking.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Full Atlas</h3>
+          <p>Filings ingestion, financial tables, valuation models, citations, alerts, and multi-company screening.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
