@@ -25,6 +25,17 @@ function showWork(){
   $('operatorLabel').textContent = `${USER.name} Work Dashboard`;
   $('analyticsLink').href = `/analytics/${USER_ID}`;
 }
+function setStatus(message, tone=''){
+  const el = $('updatedLabel');
+  if(!el) return;
+  el.textContent = message;
+  el.className = tone ? `status-text ${tone}` : 'status-text';
+}
+function setBusy(isBusy){
+  ['next','copy','done'].forEach(id=>{ const el=$(id); if(el) el.disabled = !!isBusy; });
+  const open=$('open');
+  if(open) open.classList.toggle('is-disabled', !!isBusy);
+}
 function setEmpty(msg){
   $('txt').value = msg;
   $('open').href = '#';
@@ -33,12 +44,16 @@ function setEmpty(msg){
   $('sourceLabel').textContent = '';
   current = null;
   $('readyPill').textContent = 'Complete';
+  setStatus('All work in this upload is complete.', 'success');
 }
 async function loadNext(){
+  setBusy(true);
+  setStatus('Loading the next randomized link and text...');
   const j = await api(`/api/next?user=${USER_ID}`);
   if(j.completed){
     if(j.status && j.status.user) setUserName(j.status.user.name);
     setEmpty('All available links or text suggestions have already been marked done. Upload more data or reset progress in admin.');
+    setBusy(false);
     return;
   }
   current = j;
@@ -52,10 +67,13 @@ async function loadNext(){
   $('copy').textContent = '▣ Copy Text';
   $('readyPill').textContent = 'Ready';
   $('submittedLink').value = '';
-  $('updatedLabel').textContent = 'Refreshed just now';
+  setStatus('Ready. Copy the text, open the link, then mark done.', 'success');
+  setBusy(false);
 }
 async function markDone(){
   if(!current) return;
+  setBusy(true);
+  setStatus('Saving completion and loading the next item...');
   const submittedLink = $('submittedLink').value.trim();
   await api('/api/done',{
     method:'POST',
@@ -65,12 +83,12 @@ async function markDone(){
 }
 function init(){
   showWork();
-  $('next').onclick = () => loadNext().catch(e => alert(e.message));
+  $('next').onclick = () => loadNext().then(()=>setStatus('Skipped. A fresh item is ready.')).catch(e => { setBusy(false); setStatus(e.message, 'error'); alert(e.message); });
   $('copy').onclick = async()=>{
-    try { await navigator.clipboard.writeText($('txt').value); $('copy').textContent = 'Copied ✅'; }
-    catch { alert('Copy failed. Select the text and copy manually.'); }
+    try { await navigator.clipboard.writeText($('txt').value); $('copy').textContent = 'Copied'; setStatus('Text copied. Now open the link and post the review text.', 'success'); setTimeout(()=>$('copy').textContent='▣ Copy Text',1100); }
+    catch { setStatus('Copy failed. Select the text and copy manually.', 'error'); alert('Copy failed. Select the text and copy manually.'); }
   };
-  $('done').onclick = () => markDone().catch(e => alert(e.message));
-  loadNext().catch(e => alert(e.message));
+  $('done').onclick = () => markDone().catch(e => { setBusy(false); setStatus(e.message, 'error'); alert(e.message); });
+  loadNext().catch(e => { setBusy(false); setStatus(e.message, 'error'); alert(e.message); });
 }
 init();
