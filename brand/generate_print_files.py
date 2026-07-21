@@ -72,7 +72,7 @@ card_front = svg_document(
     57.15,
     f"""
     <rect width="1125" height="675" fill="{NAVY}"/>
-    <rect x="38" y="38" width="1049" height="599" rx="12" fill="none" stroke="{GOLD}" stroke-width="3"/>
+    <rect x="75" y="75" width="975" height="525" rx="12" fill="none" stroke="{GOLD}" stroke-width="3"/>
     {door_mark(106, 116, 440, CREAM, GOLD)}
     <line x1="550" y1="155" x2="550" y2="520" stroke="{GOLD}" stroke-width="4"/>
     {text(615, 280, "GS", 140, GOLD, 700, 5)}
@@ -88,7 +88,7 @@ card_back = svg_document(
     57.15,
     f"""
     <rect width="1125" height="675" fill="{CREAM}"/>
-    <rect x="38" y="38" width="1049" height="599" rx="12" fill="none" stroke="{NAVY}" stroke-width="3"/>
+    <rect x="75" y="75" width="975" height="525" rx="12" fill="none" stroke="{NAVY}" stroke-width="3"/>
     {door_mark(78, 177, 275, NAVY, GOLD)}
     {text(390, 180, "GS CUSTOM DOORS INC.", 54, NAVY, 700, 1)}
     <line x1="390" y1="220" x2="1015" y2="220" stroke="{GOLD}" stroke-width="5"/>

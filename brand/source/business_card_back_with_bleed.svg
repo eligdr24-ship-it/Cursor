@@ -3,7 +3,7 @@
   viewBox="0 0 1125 675">
   
     <rect width="1125" height="675" fill="#F7F4ED"/>
-    <rect x="38" y="38" width="1049" height="599" rx="12" fill="none" stroke="#0A2342" stroke-width="3"/>
+    <rect x="75" y="75" width="975" height="525" rx="12" fill="none" stroke="#0A2342" stroke-width="3"/>
     
     <g transform="translate(78 177) scale(0.275)">
       <path fill="#0A2342" d="M120 120 L520 205 L520 300 L330 340 L330 790 L430 810 L430 885 L120 950 Z"/>
