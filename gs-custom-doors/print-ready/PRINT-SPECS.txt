@@ -1,0 +1,40 @@
+Gs Custom Doors Inc. — Print Specifications
+================================================
+
+COMPANY
+  Gs Custom Doors Inc.
+  4885 Fulton Dr Ste C
+  Fairfield, CA 94534-4206
+  (650) 634-8570
+
+BRAND SYSTEM
+  Mark: Architectural portal / door-frame monogram with “GS”
+  Type: Cormorant Garamond (wordmark) + Montserrat (contact)
+  Ink:  Deep walnut charcoal  RGB(28,24,20)
+  Field: Cool limestone        RGB(245,242,237)
+  Accent: Brushed brass        RGB(168,132,84)
+
+BUSINESS SIGN
+  Trim size:  30 cm × 15 cm  (300 mm × 150 mm)
+  Bleed:      3 mm on all sides (files labeled without -TRIM include bleed)
+  Resolution: 300 DPI
+  Color:      RGB (high-quality JPEG / PDF) — convert to CMYK at print shop if required
+  Files:
+    GS-Custom-Doors-Sign-30x15cm.pdf / .jpg           (with bleed 306×156 mm)
+    GS-Custom-Doors-Sign-30x15cm-TRIM.pdf / .jpg      (exact 30×15 cm)
+    GS-Custom-Doors-Sign-30x15cm-DARK*.pdf / .jpg     (dark alternate)
+
+BUSINESS CARDS
+  Trim size:  3.5 in × 2.0 in  (US standard)
+  Bleed:      0.125 in on all sides
+  Resolution: 300 DPI
+  Files:
+    FRONT / BACK — two-sided set
+    ONESIDE — all info on one side (recommended for simple printing)
+    *-TRIM — exact trim size, no bleed
+
+PRINT NOTES
+  • Prefer TRIM files for home/office printers or shops that add their own bleed.
+  • Prefer full (with bleed) files for professional offset/digital shops.
+  • Do not scale; print at 100%.
+  • Soft-proof colors may shift slightly when converted to CMYK.
